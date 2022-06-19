@@ -1,0 +1,13 @@
+$class: "class";
+//first way
+.#{$class} {
+  font-weight: bold;
+  font-size: 20px;
+}
+//secand way
+.#{$class} {
+  font: {
+    weight: bold;
+    size: 20px;
+  }
+}

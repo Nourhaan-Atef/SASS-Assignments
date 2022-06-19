@@ -1,0 +1,23 @@
+$content: "content";
+$box: "box";
+$title: "title";
+$pad: "15px";
+$cat: "cat";
+$premium: "premium";
+.#{$content} {
+  & > .#{$box} {
+    padding: $pad;
+  }
+  & > .#{$box} > .#{$title} {
+    font-size: 18px;
+  }
+  & .#{$cat} {
+    padding: $pad;
+  }
+  &.#{$premium}:befor {
+    content: $premium + " " + $box;
+  }
+  &.#{$premium}:hover {
+    background-color: #eee;
+  }
+}

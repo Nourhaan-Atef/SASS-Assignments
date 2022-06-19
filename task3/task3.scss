@@ -1,0 +1,13 @@
+$class: "class";
+$child: "child";
+//first way
+.#{$class} .#{$child} {
+  padding: 10px;
+}
+
+//secand way
+.#{$class} {
+  & .#{$child} {
+    padding: 10px;
+  }
+}
