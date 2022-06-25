@@ -1,0 +1,13 @@
+$num: 2;
+$start: 100;
+
+@function double($size) {
+  @return $size * $num;
+}
+@for $i from 1 through 5 {
+  .box-#{$i*100} {
+    width: ($start);
+    height: double($start);
+  }
+  $start: $start * $num;
+}

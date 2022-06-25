@@ -1,0 +1,9 @@
+// grid system consist of 16 cols
+
+$gird_sys: 16;
+
+@for $i from 1 through $gird_sys {
+  .col-#{$i} {
+    width: percentage($i/$gird_sys);
+  }
+}
